@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --second-bg-color2: #292d35;
+    --text-color: #ffffff;
+    --text-color2: #000000;
+    --main-color: #ff7300;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    /* padding: 10rem 9% 2rem; */
+}
+
+
+.form_book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top_form {
+    text-align: center;
+}
+
+.top_form h4 {
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.top_form h2 {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.top_form h2:hover {
+    color: var(--text-color);
+}
+
+.form_book form {
+    max-width: 70rem;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form_book form .input_box,
+.form_book form .input_box2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_book form .input_box input,
+.form_book form .input_box2 input,
+.form_book form .input_box2 select,
+.form_book form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color2);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.form_book form .input_box2 input,
+.form_book form .input_box2 select {
+    width: 49%;
+}
+
+.form_book form textarea {
+    resize: none;
+}
+
+.btn_form {
+    margin: .7rem;
+    padding: 0.5rem 3rem;
+    background: var(--second-bg-color2);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.btn_form:hover {
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+}
